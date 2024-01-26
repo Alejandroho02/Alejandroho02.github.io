@@ -1,0 +1,22 @@
+.login{
+    width: 25%;
+    padding: 1%;
+    background-color: rgba(36, 36, 36, 0.1); 
+    border-radius: 25px;
+}
+
+.logo{
+    width: 100px; 
+    height: auto;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px; 
+}
+

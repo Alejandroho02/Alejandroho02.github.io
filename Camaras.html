@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Estilos: Bootstrap y personalizado -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Estilos/Index.css">
+    
+    <title>Página en desarrollo</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="Index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+    
+            <!-- Botón de hamburguesa para pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Menú de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- Enlaces principales -->
+                    <li>                        
+                        <a class="nav-link" href="Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Acercade.html">Acerca de</a>
+                    </li>
+    
+                    <!-- Menú desplegable de Servicios -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Playstation.html">PlayStation</a></li>
+                            <li><a class="dropdown-item" href="Tv_Teatro.html">Tv y Teatro en casa</a></li>
+                            <li><a class="dropdown-item" href="Audio.html">Audio</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contactanos.html">Contactanos</a>
+                    </li>
+                </ul>
+    
+                <!-- Barra de búsqueda y Enlace de Inicio de Sesión -->
+                <div class="ms-auto">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="width: 300px;">
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Login.html">Inicio de sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+        <div class="work">
+            <img src="img/work.gif" alt="work" loop autoplay>
+            <h1>Camaras</h1>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
