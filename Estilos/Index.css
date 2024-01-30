@@ -20,3 +20,25 @@
     padding: 20px; 
 }
 
+/* Estilos para los breadcrumbs */
+.breadcrumb {
+    background-color: #f8f9fa; /* Color de fondo */
+    padding: 8px 15px; /* Espaciado interno */
+    margin-bottom: 20px; /* Margen inferior */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "›"; /* Símbolo entre los elementos */
+    color: #6c757d; /* Color del símbolo */
+    padding: 0 5px; /* Espaciado entre el símbolo y el texto */
+}
+
+/* Estilo específico para el primer elemento (Inicio) */
+.breadcrumb .breadcrumb-item:first-child a {
+    color: #555; /* Color del texto del primer elemento */
+    font-weight: bold; /* Negrita para destacar */
+    text-decoration: none; /* Sin subrayado */
+}
+
+
