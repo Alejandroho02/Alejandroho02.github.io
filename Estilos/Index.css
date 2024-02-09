@@ -1,8 +1,15 @@
-.login{
-    width: 25%;
-    padding: 1%;
-    background-color: rgba(36, 36, 36, 0.1); 
-    border-radius: 25px;
+.formularios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #152D57;
+}
+
+.link_cuenta{
+    text-align: right;
+    display: block;
 }
 
 .logo{
