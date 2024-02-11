@@ -1,0 +1,37 @@
+.titulobar {
+    color: rgb(243, 234, 234);
+    background-color: rgb(0, 133, 186);
+    font-size: medium;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.divbar{
+    background-color: #E4E7EB;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+    width: 100%;
+}
+
+.divbar1{
+    margin-top: 2px;
+    height: 100px;
+    width: 130px;
+    float: left;
+    border: 1px solid white;
+    color: black;
+}
+
+.imagbar{
+    height: 50px;
+    margin: center;
+    display: flex;
+    justify-content: center;
+}
+
+.txtbar{
+    text-align: center;
+    line-height: 1;
+    justify-content: center;
+}
