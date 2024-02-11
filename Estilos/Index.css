@@ -41,11 +41,14 @@
     padding: 0 5px; /* Espaciado entre el símbolo y el texto */
 }
 
-/* Estilo específico para el primer elemento (Inicio) */
-.breadcrumb .breadcrumb-item:first-child a {
-    color: #555; /* Color del texto del primer elemento */
+/* Estilo específico para los elementos de link */
+.breadcrumb-link {
+    color: #555; /* Color del texto */
     font-weight: bold; /* Negrita para destacar */
     text-decoration: none; /* Sin subrayado */
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
 
+}
