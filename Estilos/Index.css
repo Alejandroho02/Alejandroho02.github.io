@@ -41,11 +41,94 @@
     padding: 0 5px; /* Espaciado entre el símbolo y el texto */
 }
 
-/* Estilo específico para el primer elemento (Inicio) */
-.breadcrumb .breadcrumb-item:first-child a {
-    color: #555; /* Color del texto del primer elemento */
+/* Estilo específico para los elementos de link */
+.breadcrumb-link {
+    color: #555; /* Color del texto */
     font-weight: bold; /* Negrita para destacar */
     text-decoration: none; /* Sin subrayado */
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+        /* Estilos para la decoración */
+        .section-heading {
+            margin-bottom: 50px;
+        }
+
+        .section-heading h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .section-heading p {
+            font-size: 18px;
+            color: #777;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .card-body {
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Estilos para el footer */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 40px 0;
+            margin-top: 2%;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #f8f9fa;
+        }
+
+        .footer-logo {
+            max-width: 100px;
+        }
+
+        .footer-social-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .footer-social-icons a:hover {
+            color: #f8f9fa;
+        }
 
