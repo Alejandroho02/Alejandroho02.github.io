@@ -1,78 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="Estilos/Index.css">
+    <script src="JS/ValRegister.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </script>
     <title>Document</title>
 </head>
-
 <body class="formularios">
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <div class="card">
-                    <a href="Index.html">
-                        <img src="https://1000marcas.net/wp-content/uploads/2020/01/logo-Sony.png" class="rounded mx-auto d-block" alt="..." style="width: 40%; height: auto;">
-                    </a>
-                    <div class="card-body">
-                        <h2 class="mb-3">Registrarse</h2>
-                        <form>
-                            <div class="form-group">
-                                <label for="nombre" style="margin-top: 10px;">Nombre:</label>
-                                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-                            </div>
-                            <div class="form-group">
-                                <label for="correo" style="margin-top: 10px;">Correo Electrónico:</label>
-                                <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico">
-                            </div>
-                            <div class="form-group">
-                                <label for="contrasena" style="margin-top: 10px;">Contraseña:</label>
-                                <input type="password" class="form-control" id="contrasena" placeholder="Ingrese su contraseña">
-                            </div>
-                            <div class="form-group">
-                                <label for="confirmarContrasena" style="margin-top: 10px;">Confirmar Contraseña:</label>
-                                <input type="password" class="form-control" id="confirmarContrasena" placeholder="Confirme su contraseña">
-                            </div>
-                            <br>
-                            <button type="submit" class=" btn btn-primary">Registrar</button>
-                            <a class="btn btn-primary" href="Index.html">Salir</a>
-                        </form>
-                        <a class="link_cuenta" href="Login.html" style="margin-top: 10px;">¿Ya tienes una cuenta?</a>
-                    </div>
-                </div>
-            </div>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card">
+            <a href="Index.html">
+                <img src="https://1000marcas.net/wp-content/uploads/2020/01/logo-Sony.png" class="rounded mx-auto d-block" alt="..." style="width: 40%; height: auto;">
+            </a>
+          <div class="card-body">
+            <h2 class="mb-3">Registrarse</h2>
+            <form id="registration-form" method="post">
+              <div class="form-group">
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                <div class="valid-feedback">¡Correcto!</div>
+                <div class="invalid-feedback">Por favor, introduce tu nombre.</div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="correo" placeholder="Correo Electrónico" required>
+                <div class="valid-feedback">¡Correcto!</div>
+                <div class="invalid-feedback">Por favor, introduce un correo electrónico válido.</div>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" required>
+                <div class="valid-feedback">¡Correcto!</div>
+                <div class="invalid-feedback">La contraseña debe tener al menos 8 caracteres.</div>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="confirmarContrasena" placeholder="Confirmar Contraseña" required>
+                <div class="valid-feedback">¡Correcto!</div>
+                <div class="invalid-feedback">Las contraseñas no coinciden.</div>
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary">Registrar</button>
+              <a class="btn btn-primary" href="Index.html">Salir</a>
+              <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="6LcrDpcpAAAAAKMOTzrBVQt6C2YrEuLl7qep9Buo"></div>
+              </div>
+            </form>
+            <a class="link_cuenta" href="Login.html" style="margin-top: 10px;">¿Ya tienes una cuenta?</a>
+          </div>
         </div>
+      </div>
     </div>
-    <script>
-        document.querySelector('form').addEventListener('submit', function(event) {
-            // Obtener valores de los campos
-            var nombre = document.getElementById('nombre').value.trim();
-            var correo = document.getElementById('correo').value.trim();
-            var contrasena = document.getElementById('contrasena').value.trim();
-            var confirmarContrasena = document.getElementById('confirmarContrasena').value.trim();
-
-            // Validar que no haya campos vacíos
-            if (nombre === '' || correo === '' || contrasena === '' || confirmarContrasena === '') {
-                alert('Por favor, completa todos los campos.');
-                event.preventDefault(); // Detener el envío del formulario
-                return; // Detener la ejecución del código restante
-            }
-
-            // Redirigir al usuario después de enviar el formulario
-            window.location.href = 'mod-usuario.html';
-
-            // Mostrar una alerta informativa
-            alert('Registro exitoso. Serás redirigido a la página de modificación de usuario.');
-
-            // Detener el envío del formulario
-            event.preventDefault();
-        });
-    </script>
-
-
-</body>
-
+  </div>   
+    
+    </body>
 </html>
